@@ -31,6 +31,7 @@ modules:
       - -DHDF4_USE_GNU_DIRS:BOOL=ON
       - -DBUILD_TESTING:BOOL=OFF
       - -DBUILD_SHARED_LIBS:BOOL=ON
+      - -DBUILD_STATIC_LIBS:BOOL=OFF
     sources:
       - type: archive
         url: https://support.hdfgroup.org/ftp/HDF/releases/HDF4.2.16/src/hdf-4.2.16.tar.bz2
@@ -40,6 +41,10 @@ modules:
       - /bin
       - /include
       - /lib/cmake
+      - /lib/libhdf.a
+      - /lib/libmfhdf.a
+      - /lib/libxdr.a
+      - /lib/pkgconfig
       - /share/COPYING
       - /share/doc
   - name: hdf5
