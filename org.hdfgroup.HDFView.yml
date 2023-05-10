@@ -99,10 +99,8 @@ modules:
       - install -D hdfview.sh /app/bin/hdfview
     sources:
       - type: archive
-        url: https://support.hdfgroup.org/ftp/HDF5/releases/HDF-JAVA/hdfview-3.2.0/src/hdfview-3.2.0.tar.gz
-        sha256: d3c0deff2cbd959508c4da9c712da72fb204ff6818a3434f00a7071f8e8cf2b8
-      - type: patch
-        path: hdf.view.DefaultFileFilter.patch
+        url: https://support.hdfgroup.org/ftp/HDF5/releases/HDF-JAVA/hdfview-3.3.0/src/hdfview-3.3.0.tar.gz
+        sha256: 0916161861c21fa8dd354b445b48eff5a53d80a5c0b383e79eb64b7b108e2430
       - type: file
         path: org.hdfgroup.HDFView.png
       - type: file
