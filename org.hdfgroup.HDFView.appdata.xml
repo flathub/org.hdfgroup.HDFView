@@ -13,7 +13,7 @@
   <url type="donation">https://www.hdfgroup.org/about-us/donate-to-the-hdf-group</url>
   <url type="faq">https://portal.hdfgroup.org/display/knowledge</url>
   <url type="help">https://portal.hdfgroup.org/display/HDFVIEW/HDFView</url>
-  <url type="homepage">https://www.hdfgroup.org/downloads/hdfview/</url>
+  <url type="homepage">https://www.hdfgroup.org/downloads/hdfview</url>
   <content_rating type="oars-1.1" />
   <description>
     <p>
@@ -39,8 +39,29 @@
     <control>pointing</control>
   </recommends>
   <releases>
+    <release version="3.3.0" date="2023-04-11">
+      <url type="details">https://portal.hdfgroup.org/display/support/HDFView+3.3.0</url>
+      <description>
+        <p>Maintenance release with a number of new features and changes:</p>
+        <ul>
+          <li>Major enhancements
+            <ul>
+              <li>New hdf5 1.12 references support</li>
+              <li>SWMR created file read support with configurable refresh timer</li>
+              <li>Attribute object refactored classes</li>
+            </ul>
+          </li>
+          <li>Major bug fixes
+            <ul>
+              <li>Better variable-length types support</li>
+              <li>NETCDF-4 grids read and write crash fix</li>
+            </ul>
+          </li>
+        </ul>
+      </description>
+    </release>
     <release version="3.2.0" date="2022-05-09">
-      <url type="details">https://support.hdfgroup.org/ftp/HDF5/releases/HDF-JAVA/hdfview-3.2.0/src/hdfview-3.2.0-RELEASE.txt</url>
+      <url type="details">https://portal.hdfgroup.org/display/support/HDFView+3.2.0</url>
       <description>
         <p>Maintenance release with a number of new features and changes:</p>
         <ul>
