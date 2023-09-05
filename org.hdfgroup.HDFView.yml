@@ -66,8 +66,8 @@ modules:
       - -DBUILD_STATIC_LIBS:BOOL=OFF
     sources:
       - type: archive
-        url: https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.14/hdf5-1.14.1/src/hdf5-1.14.1.tar.bz2
-        sha256: 2681998824647169a39ff49b62b910fa63db1acbf0d44286968308db96b28b17
+        url: https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.14/hdf5-1.14.2/src/hdf5-1.14.2.tar.bz2
+        sha256: ea3c5e257ef322af5e77fc1e52ead3ad6bf3bb4ac06480dd17ee3900d7a24cfb
         strip-components: 2
     cleanup:
       - /bin
@@ -75,8 +75,7 @@ modules:
       - /lib/cmake
       - /lib/pkgconfig
       - /share/COPYING
-      - /share/RELEASE.txt
-      - /share/USING_HDF5_CMake.txt
+      - /share/doc
   - name: hdfview
     buildsystem: simple
     build-options:
