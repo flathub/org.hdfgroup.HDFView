@@ -1,12 +1,12 @@
 app-id: org.hdfgroup.HDFView
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: "22.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk
 build-options:
   env:
-    JAVA_HOME: /usr/lib/sdk/openjdk/jvm/openjdk-17
+    JAVA_HOME: /usr/lib/sdk/openjdk/jvm/openjdk-20
     ANT_HOME: /usr/lib/sdk/openjdk/ant
 finish-args:
   - --env=PATH=/app/bin:/app/jre/bin:/usr/bin
