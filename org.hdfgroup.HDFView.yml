@@ -34,8 +34,8 @@ modules:
       - -DBUILD_STATIC_LIBS:BOOL=OFF
     sources:
       - type: archive
-        url: https://support.hdfgroup.org/ftp/HDF/releases/HDF4.2.16/src/hdf-4.2.16.tar.bz2
-        sha256: 4b9c46b07f365a9150ddbf0e33589732be1ccdd7e7bbc978a37990259388b5e6
+        url: https://support.hdfgroup.org/ftp/HDF/releases/HDF4.2.16-2/src/hdf-4.2.16-2.tar.bz2
+        sha256: c5c3234b5012258aef2e4432f649b31c21b26015afba1857ad83640c3f2b692c
         strip-components: 2
     cleanup:
       - /bin
