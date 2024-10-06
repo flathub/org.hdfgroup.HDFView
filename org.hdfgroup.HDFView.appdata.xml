@@ -37,6 +37,50 @@
     <control>pointing</control>
   </recommends>
   <releases>
+    <release version="3.3.2" date="2024-06-04">
+      <url type="details">https://www.hdfgroup.org/2024/06/04/release-of-hdfview-3-3-2-newsletter-203/</url>
+      <description>
+        <ul>
+          <li>Major enhancements
+            <ul>
+              <li>Add User Option for editing the plugin path and include plugins.</li>
+              <li>Add Support for operating with float16 datatypes.</li>
+            </ul>
+          </li>
+          <li>Minor bug fixes
+            <ul>
+              <li>(Help menu dialogs have gigantic images) Implemented by changing the size from 1024 to 256.</li>
+              <li>(HDFView fails to find input files on command line when using relative paths)</li>
+            </ul>
+          </li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.3.1" date="2023-08-29">
+      <url type="details">https://www.hdfgroup.org/2023/08/28/release-of-hdfview-3-3-1-newsletter-197/</url>
+      <description>
+        <ul>
+          <li>Major enhancements
+            <ul>
+              <li>Updated all icons with transparency</li>
+            </ul>
+          </li>
+          <li>Major bug fixes
+            <ul>
+              <li>crashes on NETCDF-4 grids have been fixed</li>
+              <li>Add support for true Variable-length types in Java</li>
+            </ul>
+          </li>
+          <li>Minor bug fixes
+            <ul>
+              <li>Corrected how the program updates changes to the fonts made in the User Preferences dialog.</li>
+              <li>(Check aarch64 in machine.arch property) fixed by adding a section to for aarch64.</li>
+              <li>(HDFView 3.3.0 shows incorrect references in compound types in datasets)</li>
+            </ul>
+          </li>
+        </ul>
+      </description>
+    </release>
     <release version="3.3.0" date="2023-04-11">
       <url type="details">https://portal.hdfgroup.org/display/support/HDFView+3.3.0</url>
       <description>
