@@ -2,9 +2,7 @@
 <component type="desktop-application">
   <id>org.hdfgroup.HDFView</id>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>
-    LicenseRef-1=https://github.com/HDFGroup/hdfview/blob/master/COPYING
-  </project_license>
+  <project_license>BSD-3-Clause</project_license>
   <developer_name>The HDF Group</developer_name>
   <name>HDFView</name>
   <summary>Browse and edit HDF files</summary>
@@ -39,49 +37,17 @@
     <control>pointing</control>
   </recommends>
   <releases>
+    <release version="3.3.2" date="2024-06-04">
+      <url type="details">https://www.hdfgroup.org/2024/06/04/release-of-hdfview-3-3-2-newsletter-203/</url>
+    </release>
+    <release version="3.3.1" date="2023-08-29">
+      <url type="details">https://www.hdfgroup.org/2023/08/28/release-of-hdfview-3-3-1-newsletter-197/</url>
+    </release>
     <release version="3.3.0" date="2023-04-11">
       <url type="details">https://portal.hdfgroup.org/display/support/HDFView+3.3.0</url>
-      <description>
-        <p>Maintenance release with a number of new features and changes:</p>
-        <ul>
-          <li>Major enhancements
-            <ul>
-              <li>New hdf5 1.12 references support</li>
-              <li>SWMR created file read support with configurable refresh timer</li>
-              <li>Attribute object refactored classes</li>
-            </ul>
-          </li>
-          <li>Major bug fixes
-            <ul>
-              <li>Better variable-length types support</li>
-              <li>NETCDF-4 grids read and write crash fix</li>
-            </ul>
-          </li>
-        </ul>
-      </description>
     </release>
     <release version="3.2.0" date="2022-05-09">
       <url type="details">https://portal.hdfgroup.org/display/support/HDFView+3.2.0</url>
-      <description>
-        <p>Maintenance release with a number of new features and changes:</p>
-        <ul>
-          <li>Major enhancements
-            <ul>
-              <li>New hdf5 1.12 references support</li>
-              <li>SWMR created file read support with configurable refresh timer</li>
-              <li>Attribute object refactored classes</li>
-            </ul>
-          </li>
-          <li>Major bug fixes
-            <ul>
-              <li>Non-standard floating point numbers read support</li>
-              <li>New optional startDir command line option</li>
-              <li>Corrected user.home vs user.dir confusion</li>
-              <li>Splitted Current Working Directory option</li>
-            </ul>
-          </li>
-        </ul>
-      </description>
     </release>
   </releases>
 </component>

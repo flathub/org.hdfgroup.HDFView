@@ -1,13 +1,14 @@
 app-id: org.hdfgroup.HDFView
 runtime: org.freedesktop.Platform
-runtime-version: "23.08"
+runtime-version: "24.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.openjdk
+  - org.freedesktop.Sdk.Extension.openjdk21
 build-options:
   env:
-    JAVA_HOME: /usr/lib/sdk/openjdk/jvm/openjdk-21
-    ANT_HOME: /usr/lib/sdk/openjdk/ant
+    JAVA_HOME: /usr/lib/sdk/openjdk21/jvm/openjdk-21
+    ANT_HOME: /usr/lib/sdk/openjdk21/ant
+    JAVA_COMPILER: /usr/lib/sdk/openjdk21/bin/javac
 finish-args:
   - --env=PATH=/app/bin:/app/jre/bin:/usr/bin
   - --env=JAVA_HOME=/app/jre
@@ -19,7 +20,7 @@ modules:
   - name: openjdk
     buildsystem: simple
     build-commands:
-      - /usr/lib/sdk/openjdk/install.sh
+      - /usr/lib/sdk/openjdk21/install.sh
   - name: libaec
     buildsystem: cmake-ninja
     builddir: true
@@ -53,8 +54,8 @@ modules:
       - -DBUILD_STATIC_LIBS:BOOL=OFF
     sources:
       - type: archive
-        url: https://support.hdfgroup.org/ftp/HDF/releases/HDF4.2.16-2/src/hdf-4.2.16-2.tar.bz2
-        sha256: c5c3234b5012258aef2e4432f649b31c21b26015afba1857ad83640c3f2b692c
+        url: https://support.hdfgroup.org/releases/hdf4/v4_3/v4_3_0/downloads/hdf4.3.0.tar.gz
+        sha256: 282b244a819790590950f772095abcaeef405b0f17d2ee1eb5039da698cf938b
         strip-components: 2
     cleanup:
       - /bin
@@ -87,8 +88,8 @@ modules:
       - -DBUILD_STATIC_LIBS:BOOL=OFF
     sources:
       - type: archive
-        url: https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.14/hdf5-1.14.3/src/hdf5-1.14.3.tar.bz2
-        sha256: 9425f224ed75d1280bb46d6f26923dd938f9040e7eaebf57e66ec7357c08f917
+        url: https://support.hdfgroup.org/releases/hdf5/v1_14/v1_14_4/downloads/hdf5-1.14.4-3.tar.gz
+        sha256: 019ac451d9e1cf89c0482ba2a06f07a46166caf23f60fea5ef3c37724a318e03
         strip-components: 2
     cleanup:
       - /bin
@@ -119,8 +120,9 @@ modules:
       - install -D hdfview.sh /app/bin/hdfview
     sources:
       - type: archive
-        url: https://support.hdfgroup.org/ftp/HDF5/releases/HDF-JAVA/hdfview-3.3.0/src/hdfview-3.3.0.tar.gz
-        sha256: 0916161861c21fa8dd354b445b48eff5a53d80a5c0b383e79eb64b7b108e2430
+        url: https://github.com/HDFGroup/hdfview/releases/download/v3.3.2/HDFView-3.3.2.tar.gz
+        sha256: 6e83811ae98a45b82023baeca5335b9cfafd75d9f4cada93661896618b2b47aa
+        strip-components: 2
       - type: file
         path: org.hdfgroup.HDFView.png
       - type: file
