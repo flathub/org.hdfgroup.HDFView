@@ -27,6 +27,7 @@
   <screenshots>
     <screenshot type="default">
       <image>https://www.hdfgroup.org/wp-content/uploads/2017/07/hdfview-sample3.png</image>
+      <caption>HDF5 container with embedded image</caption>
     </screenshot>
   </screenshots>
   <launchable type="desktop-id">org.hdfgroup.HDFView.desktop</launchable>
